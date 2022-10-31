@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const withPWA = require('next-pwa')
+const withSass = require('@zeit/next-sass');
 const runtimeCaching = require('next-pwa/cache')
+const path = require('path');
 
 module.exports = withPWA({
   pwa: {
@@ -8,3 +10,13 @@ module.exports = withPWA({
     runtimeCaching,
   },
 })
+
+module.exports = withSass({
+  cssModules: true
+});
+
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')]
+  }
+}

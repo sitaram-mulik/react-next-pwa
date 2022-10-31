@@ -1,0 +1,46 @@
+$start-col: 1;
+$end-col: 16;
+
+@mixin generate-grid($val) {
+    .grid-cols-#{$val} {
+        grid-template-columns: repeat(#{$val}, minmax(0, 1fr));
+    }
+    .col-start-#{$val} {
+        grid-column-start: #{$val};
+    }
+    .col-end-#{$val} {
+        grid-column-end: #{$val};
+    }
+    .col-span-#{$val} {
+        grid-column: span #{$val} / span #{$val};
+    }
+    .row-start-#{$val} {
+        grid-row-start: #{$val};
+    }
+    .row-end-#{$val} {
+        grid-row-end: #{$val};
+    }
+    .gap-#{$val} {
+        gap: calc(#{$val} * 0.5rem);
+    }
+}
+
+@for $i from $start-col through $end-col {
+    @include generate-grid($i);
+}
+
+.col-span-full {
+    grid-column: 1 / -1;
+}
+.col-start-auto {
+    grid-column-start: auto;
+}
+.col-end-auto {
+    grid-column-end: auto;
+}
+.row-start-auto {
+    grid-row-start: auto;
+}
+.row-end-auto {
+    grid-row-end: auto;
+}
