@@ -47,7 +47,10 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
       {!!getLayout ? getLayout(<Component {...pageProps} />) : 
         <>
-          {!isEditView ? <Navbar /> : <SideNav />}<Component {...pageProps} /></>}
+          {/* {!isEditView ? <Navbar /> : <SideNav />} */}
+          <Component {...pageProps} />
+        </>
+      }
     </>
   )
 };

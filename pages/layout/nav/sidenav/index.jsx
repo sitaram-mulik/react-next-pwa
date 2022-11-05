@@ -1,5 +1,5 @@
 import SideNavItem from "./SideNavItem";
-import { editNavLinks } from "./utilities";
+import { editNavLinks } from "../../../../utilities/sidenav";
 
 function SideNav() {
     return (
@@ -17,7 +17,7 @@ function SideNav() {
                 </a> */}
             </div>
             <ul className="relative px-1">
-                {editNavLinks.map((nav) => <SideNavItem nav={nav} />)}
+                {editNavLinks?.map((nav) => <SideNavItem nav={nav} />)}
                 {/* <li className="relative" id="sidenavSecEx2">
                 <a className="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse" data-bs-target="#collapseSidenavSecEx2" aria-expanded="false" aria-controls="collapseSidenavSecEx2">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 mr-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">

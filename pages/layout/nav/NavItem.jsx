@@ -16,3 +16,4 @@ const NavItem = memo(() => {
     );
 });
 
+export default NavItem;

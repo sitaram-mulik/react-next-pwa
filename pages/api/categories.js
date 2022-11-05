@@ -112,8 +112,8 @@ let categories = {
             "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus.",
             "type": "category",
             "styles": {
-                "start-x": "auto",
-                "end-x": "auto",
+                "start-x": "1",
+                "end-x": "5",
                 "start-y": "auto",
                 "end-y": "auto",
             }

@@ -14,11 +14,12 @@ const MobileView = memo(({navLinks}) => {
         leave="duration-100 ease-in"
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
+        show={true}
     >
-        <Popover.Panel
+        {/* <Popover.Panel
             focus
             className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
-        >
+        > */}
             <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                 <MProductLogo />
                 <div className="space-y-6 py-6 px-5">
@@ -28,7 +29,7 @@ const MobileView = memo(({navLinks}) => {
                     <MAuthLinks authLinks={navLinks?.authLinks || []} />
                 </div>
             </div>
-        </Popover.Panel>
+        {/* </Popover.Panel> */}
     </Transition>
 });
 

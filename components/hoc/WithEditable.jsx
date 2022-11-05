@@ -12,7 +12,7 @@ function WithEditable(Component) {
         useEffect(() => {
             let styles = []
             if(!Array.isArray(styles)) {
-                const _fields = Object.keys(styles).map((key) => {
+                const _fields = Object.keys(styles)?.map((key) => {
                     return {
                         id: key,
                         value: styles[key]

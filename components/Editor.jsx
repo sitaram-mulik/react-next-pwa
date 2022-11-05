@@ -8,7 +8,7 @@ function Editor(props) {
     const [showBox, setShowBox] = useState(false);
     useEffect(() => {
         if(!Array.isArray(props)) {
-            const _fields = Object.keys(props).map((key) => {
+            const _fields = Object.keys(props)?.map((key) => {
                 return {
                     id: key,
                     value: props[key]

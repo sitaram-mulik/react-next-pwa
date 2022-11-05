@@ -22,9 +22,9 @@ export default function Navbar({navProps}) {
         }
     }, [navProps]);
     return (
-        <Popover className="relative bg-white">
+        // <Popover className="relative bg-white">
             <DesktopView navLinks={navLinks} />
-            <MobileView navLinks={navLinks} />
-        </Popover>
+        //     <MobileView navLinks={navLinks} />
+        // </Popover>
     );
 };

@@ -5,7 +5,7 @@ import { memo } from 'react';
 const PublicLinks = memo(({publicLinks}) => {
     return (
         <>
-            {publicLinks.map((link) => {
+            {publicLinks?.map((link) => {
                 return (
                     <Link
                         key={link?.path}
