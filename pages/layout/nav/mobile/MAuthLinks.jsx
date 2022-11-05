@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { memo } from 'react';
-import { authLinks } from '../nav';
 
 const MAuthLinks = memo(({authLinks}) => {
     return (
